@@ -1,0 +1,32 @@
+<h2>Create Todo</h2>
+<form (submit)="createTodo()" class="todo-form">
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" class="form-control" required [(ngModel)]="title">
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" class="form-control" rows="4" required [(ngModel)]="description"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="status">Status:</label>
+        <select id="status" name="status" class="form-control" required [(ngModel)]="status">
+            <option value="pending">Pending</option>
+            <option value="in_progress">In Progress</option>
+            <option value="completed">Completed</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority" class="form-control" required [(ngModel)]="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn-create">Create Todo</button>
+</form>

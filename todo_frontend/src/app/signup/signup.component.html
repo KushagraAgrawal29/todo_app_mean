@@ -1,0 +1,17 @@
+<body class="bg-gradient-to-r from-blue-500 to-purple-500 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md slide-in">
+      <h2 class="text-3xl font-semibold mb-6 text-center text-gray-800">Sign Up</h2>
+      <form (ngSubmit)="signup()">
+          <input type="text" name="username" [(ngModel)]="username" placeholder="Username"
+              class="w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300">
+          <input type="email" name="email" [(ngModel)]="email" placeholder="Email"
+              class="w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300">
+          <input type="password" name="password" [(ngModel)]="password" placeholder="Password"
+              class="w-full px-4 py-2 mb-6 border rounded-md focus:outline-none focus:ring focus:border-blue-300">
+          <button type="submit"
+              class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
+              Get Started
+          </button>
+      </form>
+  </div>
+</body>

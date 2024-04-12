@@ -1,0 +1,51 @@
+/* Edit todo */
+.edit-todo__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.edit-todo__form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-todo__form-group {
+  margin-bottom: 20px;
+}
+
+.edit-todo__label {
+  font-weight: bold;
+}
+
+.edit-todo__input,
+.edit-todo__textarea,
+.edit-todo__select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-todo__textarea {
+  resize: vertical;
+}
+
+.edit-todo__btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-todo__btn-primary {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.edit-todo__btn:hover {
+  background-color: #2980b9;
+}

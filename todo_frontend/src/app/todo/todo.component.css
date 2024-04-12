@@ -1,0 +1,176 @@
+/* styles.css */
+/* Header */
+/* Todos */
+.header {
+  background-color: darkorchid;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-todos__title {
+  margin: 0;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  padding: 0.2rem;
+  font-size: larger;
+  margin-top: 1rem;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-create-todo {
+  background-color: #27ae60;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.btn-logout {
+  background-color: #e74c3c;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  background-color: #34495e;
+}
+
+.todo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.todo-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-card__content {
+  margin-bottom: 10px;
+}
+
+.todo-card__title {
+  margin: 0;
+}
+
+.todo-card__meta {
+  display: flex;
+  align-items: center;
+}
+
+.todo-card__label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.todo-card__actions {
+  margin-top: auto; /* Push actions to the bottom */
+  display: flex;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.btn-create-todo {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.btn-logout {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #34495e;
+}
+
+
+.list-todos__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.list-todos__card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.list-todos__content {
+  margin-bottom: 10px;
+}
+
+.list-todos__card-title,
+.list-todos__card-description,
+.list-todos__card-priority,
+.list-todos__card-status {
+  margin-bottom: 5px;
+}
+
+.list-todos__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list-todos__action-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.list-todos__action-btn-primary {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.list-todos__action-btn-danger {
+  background-color: #e74c3c;
+  color: #fff;
+  justify-content: end;
+  padding: 1rem;
+  margin-left: auto;
+}
+
+.list-todos__action-btn:hover {
+  background-color: #34495e;
+}

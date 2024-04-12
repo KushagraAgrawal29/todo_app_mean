@@ -1,0 +1,28 @@
+<h2 class="edit-todo__title">Edit todo</h2>
+<form class="edit-todo__form" (ngSubmit)="editTodo()">
+  <div class="edit-todo__form-group">
+    <label for="edit-title" class="edit-todo__label">Title:</label>
+    <input type="text" id="edit-title" name="title" [(ngModel)]="title" class="edit-todo__input" required>
+  </div>
+  <div class="edit-todo__form-group">
+    <label for="edit-description" class="edit-todo__label">Description:</label>
+    <textarea id="edit-description" name="description" [(ngModel)]="description" class="edit-todo__textarea" rows="5" required></textarea>
+  </div>
+  <div class="edit-todo__form-group">
+    <label for="edit-priority" class="edit-todo__label">Priority:</label>
+    <select id="edit-priority" name="priority" [(ngModel)]="priority" class="edit-todo__select" required>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+  </div>
+  <div class="edit-todo__form-group">
+    <label for="edit-status" class="edit-todo__label">Status:</label>
+    <select id="edit-status" name="status" [(ngModel)]="status" class="edit-todo__select" required>
+      <option value="todo">To Do</option>
+      <option value="in-progress">In Progress</option>
+      <option value="done">Done</option>
+    </select>
+  </div>
+  <button type="submit" class="edit-todo__btn edit-todo__btn-primary">Save Changes</button>
+</form>

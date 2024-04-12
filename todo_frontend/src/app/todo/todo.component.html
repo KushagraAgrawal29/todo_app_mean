@@ -1,0 +1,35 @@
+<header class="header">
+  <div class="container">
+    <h1 class="list-todos__title">Your Todo Diary</h1>
+    <div class="header__actions">
+      <button class="btn btn-create-todo" (click)="createTodo()">Create Todo</button>
+      <button class="btn btn-logout" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div *ngIf="todo$ | async as todos" class="todo-grid">
+    <div *ngFor="let todo of todos" class="todo-card">
+      <div class="todo-card__content">
+        <h2 class="todo-card__title">{{ todo.title }}</h2>
+        <p class="todo-card__description">{{ todo.description }}</p>
+        <div class="todo-card__meta">
+          <span class="todo-card__label">Priority:</span>
+          <span class="todo-card__value">{{ todo.priority }}</span>
+        </div>
+        <div class="todo-card__meta">
+          <span class="todo-card__label">Status:</span>
+          <span class="todo-card__value">{{ todo.status }}</span>
+        </div>
+      </div>
+      <div class="todo-card__date">
+        <p><strong>Created At :</strong> {{ todo.createdAt | date: 'medium' }}</p>
+      </div>
+      <div class="todo-card__actions">
+        <button class="list-todos__action-btn list-todos__action-btn-primary" (click)="editTodo(todo.id)">Edit Todo</button>
+        <button class="list-todos__action-btn list-todos__action-btn-danger" (click)="deleteTodo(todo.id)">Delete Todo</button>
+      </div>
+    </div>
+  </div>
+</main>
